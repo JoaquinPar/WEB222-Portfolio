@@ -20,6 +20,7 @@
     font-size: 1.1em;
     height: 50px;
     border-radius: 8px;
+    margin-bottom: 20px;
     cursor: pointer;
 }
 .resume > i {
@@ -32,8 +33,9 @@
     max-width: 1024px;
     background: white;
     display: grid;
-    grid-template-columns: 507px 507px;
-    grid-column-gap: 10px;
+    grid-template-columns: 550px 507px;
+    grid-column-gap: 30px;
+    padding: 10px;
 }
 
 .about_me {
