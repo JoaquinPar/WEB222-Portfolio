@@ -4,11 +4,13 @@
             <meta charset="utf-8">
             <title>myPortfolio</title>
             <link rel="stylesheet" href="style.css"/>
-            <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/> <!---->
+            <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/> 
+            <!--Including my stile sheet as well as the one used to retrieve the download icon-->
         </head>
         <body style="background: lightblue;" class="main">
+            <!--this section takes care of the header of the page, the image, name, title and links-->
             <div class="presentation">
-                <img src="me.jpg" alt="Picture of Me">
+                <img src="images/me.jpg" alt="Picture of Me">
                 <h1>Joaquin Paredes</h1>
                 <h3>Game Developer, Web Designer</h3>
                 <a href="resume.pdf" target="_blank" style="text-decoration: none;">
@@ -19,6 +21,7 @@
                 </a>
             </div>
 
+            <!--this section takes care of the about me and basic information. I used a grid display to format this-->
             <div class="background_info">
                 <div class="my_info">
                     <div class="about_me">
@@ -74,6 +77,7 @@
             
             <h2 style="text-align: center;">EDUCATION</h2>
 
+            <!--this section takes care of the education info. I also formatted this with a grid display-->
             <div class="background_edu">
                 <div class="education">
                     <div>
@@ -107,6 +111,7 @@
 
             <h2 style="text-align: center;" id="contact_me">CONTACT ME</h2>
 
+            <!--This section takes care of contact me part of the website. it contains all the necessary implementations for it to be fully functional-->
             <div class="background_form">
                 <div class="contact_me">
                     <form action="https://httpbin.org/post" method="POST" id="contact">
@@ -116,9 +121,9 @@
                         <input type="text" list="canadian_cities" name="City" placeholder="CITY" style="height: 30px;" required/><br>
                         <input type="text" name="postal" placeholder="POSTAL CODE" pattern="^[A-Za-z]\d[A-Za-z]+\s+\d[A-Za-z]\d$" style="height: 30px;" required/><br>
                         <label>What is this about?</label><br>
-                        <input type="radio" id="question" name="about?" value="Question" style="margin-top: 10px;"/>
+                        <input type="radio" id="question" name="about?" value="Question" style="margin-top: 10px;" onclick="toBeHired()"/>
                         <label for="question">QUESTION</label>
-                        <input type="radio" id="comment" name="about?" value="Comment"/>
+                        <input type="radio" id="comment" name="about?" value="Comment" onclick="toBeHired()"/>
                         <label for="comment">COMMENT</label>
                         <input type="radio" id="hiring" name="about?" value="Hiring" onclick="toBeHired()"/>
                         <label for="hiring">HIRING</label><br>

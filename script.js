@@ -1,3 +1,4 @@
+//this function handles the appearance and disappearance of the wage input box
 function toBeHired() {
     var wage = document.getElementById('hourly_wage');
 
