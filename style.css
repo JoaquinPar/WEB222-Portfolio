@@ -39,7 +39,7 @@
     max-width: 1024px;
     background: white;
     display: grid;
-    grid-template-columns: 550px 507px;
+    grid-template-columns: 550px 444px;
     grid-column-gap: 30px;
     padding: 10px;
 }
